@@ -1,5 +1,12 @@
+ul {
+	width:1800px;
+	height: 300px;
+	
+
+}
 div {
-	width: 20px;
-	height: 200px;
-	display: inline;
+	width:20px;
+	height:200px;
+	float: left;
+	
 }
