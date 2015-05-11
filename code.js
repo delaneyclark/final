@@ -260,8 +260,8 @@ $(document).ready(function(){
 							 	$("body").append("<p>" + y + "</p>");
 							 	$("body").append("<p>" + z + "</p>");
 
-							 	$("body").append("<p>That is the " + label + " star</p>")
-							 })
+							 // 	$("body").append("<p>That is the " + label + " star</p>")
+							 // })
 
 				// 				$("#hello").click(function(item){
 				// 	console.log($(this).attr("data-x"))
