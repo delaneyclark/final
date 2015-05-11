@@ -8,8 +8,8 @@ $(document).ready(function(){
   						console.log(response[i].colorb_v);
 						if (response[i].colorb_v === -0.32 ) { 
 
-							// response[i].x
-							$("ul").append("<div data-x = " +response[i].x + " data-y = " +response[i].y + " data-z = " +response[i].z +"style=\"background-color:#9bb0ff\"></div>")
+						// response[i].x
+						$("ul").append("<div data-x = " +response[i].x + " data-y = " +response[i].y + " data-z = " +response[i].z +"style=\"background-color:#9bb0ff\"></div>")
 
 							
 						} else if (response[i].colorb_v <= -0.30 ) { 
@@ -264,10 +264,23 @@ $(document).ready(function(){
 					console.log($(this).attr("data-x"))
 				})
 
+					// response.sort(function(a,b) { return parseFloat(a.color_v) - parseFloat(b.color_v) } );
+     //                }) 
 
-                    }    
-                    
-                   )     
+                    var sort_by = function(field, reverse, primer){
+
+				   var key = primer ? 
+				   function(x) {return primer(x[field])} : 
+				   function(x) {return x[field]};
+
+   					reverse = !reverse ? 1 : -1;
+
+   					return function (a, b) {
+       				return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
+     				} 
+					} 
+
+					response.sort(sort_by('colorb_v', true, parsec))   
             
             
             })
