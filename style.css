@@ -2,6 +2,10 @@ body {
 	background-color: black;
 }
 
+p {
+	color: white;
+}
+
 ul {
 	width:1850px;
 	height: 300px;
@@ -25,6 +29,3 @@ div:hover {
 	overflow: hidden;
 
 
-@media all and (min-width: 480px) and (max-width: 630px){
-
-	}

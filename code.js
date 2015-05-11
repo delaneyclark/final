@@ -254,15 +254,18 @@ $(document).ready(function(){
 								var x = $(this).attr("data-x");
 								var y = $(this).attr("data-y");
 								var z = $(this).attr("data-z");
+								var label = $(this).attr("data-label")
 
 							 	$("body").append("<p>" + x + "</p>");
 							 	$("body").append("<p>" + y + "</p>");
-							 	$("body").append("<p>" + z + "</p>")
+							 	$("body").append("<p>" + z + "</p>");
+
+							 	$("body").append("<p>That is the " + label + " star</p>")
 							 })
 
-								$("#hello").click(function(item){
-					console.log($(this).attr("data-x"))
-				})
+				// 				$("#hello").click(function(item){
+				// 	console.log($(this).attr("data-x"))
+				// })
 
 
                     }    
