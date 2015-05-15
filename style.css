@@ -23,9 +23,25 @@ div {
 
 }
 
+div {
+	width:60px;
+	height:200px;
+	float: left;
+	display: block;
+	margin: 1px;
+	border: none; 
+	overflow: hidden;
+
+}
+
 div:hover {
 	border: 1px solid white;
 	margin: -1px;
 	overflow: hidden;
+}
+
+div.hide {
+	display:none;
+}
 
 
