@@ -256,12 +256,12 @@ $(document).ready(function(){
 								var z = $(this).attr("data-z");
 								var label = $(this).attr("data-label");
 
-								$("ul.title").append("<p>That is the " + label + " star</p>")
+								$("ul.title").html("<p>That is the " + label + " star</p>")
 							 	$("ul.title").append("<p>" + x + "</p>");
 							 	$("ul.title").append("<p>" + y + "</p>");
 							 	$("ul.title").append("<p>" + z + "</p>");
 
-							 	$("div.colors").toggleClass("hide")
+							 	// $("ul.title").toggleId("show")
 							 })
 
 							
