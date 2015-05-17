@@ -10,8 +10,6 @@ ul.colors {
 	padding: 0;
 	margin: 1% 2% 0% 2%;
 	text-align: center;
-
-
 }
 
 footer {
@@ -19,26 +17,20 @@ footer {
 	color: black;
 	background: rgba(255, 255, 255, .9);
 	padding: 1.2em;
-	
 	z-index: 700;
 	position: absolute;
 	margin: 0;
 	left: 0px;
 	bottom:0px;
-	height: 10%;
-	width: 98%;
-	
-	
+	height: 13%;
+	width: 98%;	
 }
 
-.question{
-	display: none;
-}
-.question#show {
+
+.question {
 	font-size: 20px;
 	text-align: center;
 	
-	float: center;
 }
 
 .xyz {
@@ -54,20 +46,17 @@ footer {
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 22px;
 	float: left;
 	font-weight: normal;
 
 }
 li{
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 18px;
+	
 	
 }
-/*ul.title {
-	display: none;
-}
-*/
+
 div.color {
 	width:60px;
 	height:2.5em;
@@ -81,7 +70,7 @@ div.color {
 
 div.color:hover {
 	border: 1px solid white;
-	margin: -1px;
+	margin: 0;
 	overflow: hidden;
 }
 
