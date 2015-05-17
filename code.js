@@ -258,13 +258,17 @@ $(document).ready(function(){
 								var z = $(this).attr("data-z");
 								var label = $(this).attr("data-label");
 
-								$("div.title").html("<p class=\"name\">That is the " + label + " star</p>")
-							 	$("div.title").append("<p class=\"loc\">" + x + "</p>");
-							 	$("div.title").append("<p class=\"loc\">" + y + "</p>");
-							 	$("div.title").append("<p class=\"loc\">" + z + "</p>");
-
+								
+								$("div.title").html("<h1 id=\"name\">That is the " + label + " star</h1>");
+							 	$("ul.xyz").html("<li id=\"loc\">" + x + "</li><li id=\"loc\">" + y + "</li><li id=\"loc\">" + z + "</li>");
+							 	
+							 	
 							 	// $("ul.title").toggleId("show")
 							 })
+
+							$("div.question").click(function() {
+
+							})
 
 							
 							// $("p").live('a', 'click', function() {
