@@ -261,7 +261,7 @@ $(document).ready(function(){
 								
 								$("div.title").html("<h1 id=\"name\">That is the " + label + " star</h1>");
 							 	$("ul.xyz").html("<li id=\"loc\">" + x + "</li><li id=\"loc\">" + y + "</li><li id=\"loc\">" + z + "</li>");
-							 	
+							 	$("div.question").show()
 							 	$("div.question").click(function() {
 								var hipnum = $(this).attr("data-hip")
 								window.open('http://www.astrostudio.org/xhip.php?hip=' + response[i].hipnum );

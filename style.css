@@ -28,11 +28,16 @@ footer {
 
 
 .question {
+	display:none;
 	font-size: 20px;
 	text-align: center;
 	width: 30%;
 	margin: 0 auto;
 	
+}
+
+.question:hover {
+	font-style: italic;
 }
 
 .xyz {
