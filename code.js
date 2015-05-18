@@ -261,12 +261,14 @@ $(document).ready(function(){
 								
 								$("div.title").html("<h1 id=\"name\">That is the " + label + " star</h1>");
 							 	$("ul.xyz").html("<li id=\"loc\">" + x + "</li><li id=\"loc\">" + y + "</li><li id=\"loc\">" + z + "</li>");
-							 	$("div.question").show()
+							 	$("div.question").show();
 
-							 	$("div.question").click(function() {
-								
-								window.open('http://www.astrostudio.org/xhip.php?hip=' + hip );
-							})
+							//  	$("div.question").click(function() {
+							// 	window.open('http://www.astrostudio.org/xhip.php?hip=' + hip );
+							// })
+
+								$("div.question").html("<a target='_blank' href=\"http://www.astrostudio.org/xhip.php?hip=" + hip + " \">click to go to</a>")
+							
 							 	
 							 })
 
@@ -274,17 +276,11 @@ $(document).ready(function(){
 
 							
 
-							
-							// $("p").live('a', 'click', function() {
-
-							// 	$("div").toggleClass("show")
-
-							// })
-						
+		
 
 
 								$("#data").click(function(item){
-					console.log($(this).attr("data-x"))
+								console.log($(this).attr("data-x"))
 				})
 
 
